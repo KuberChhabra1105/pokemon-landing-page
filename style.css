@@ -1,0 +1,206 @@
+/* reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#f5f5f5;
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* container */
+
+.container{
+    min-height:95vh;
+    display:grid;
+    grid-template-columns:60% 40%;
+    position:relative;
+    overflow:hidden;
+}
+
+/* left side */
+
+.left{
+    background:#ffd500;
+    position:relative;
+    padding:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo{
+    width:180px;
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+.tag{
+    letter-spacing:6px;
+    font-size:16px;
+    margin-top:120px;
+
+    text-transform: stroke;
+}
+
+h1{
+    font-size:120px;
+
+}
+
+.desc{
+    max-width:450px;
+    line-height:1.5;
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.page{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.line{
+    width:50px;
+    height:5px;
+    background:black;
+}
+
+.page p{
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* pokeball */
+
+.pokeball{
+    width:280px;
+    height:280px;
+    border:15px solid rgba(0,0,0,0.1);
+    border-radius:50%;
+    position:absolute;
+    bottom:-100px;
+    left:-100px;
+}
+
+.pokeball::before{
+    content:"";
+    width:100%;
+    height:15px;
+    background:rgba(0,0,0,0.1);
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.pokeball::after{
+    content:"";
+    width:70px;
+    height:70px;
+    border:15px solid rgba(0,0,0,0.1);
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* right side */
+
+.right{
+    background:#f7ecd0;
+    position:relative;
+
+}
+
+.pikachu{
+    position:absolute;
+
+    width:650px;
+
+    top:50%;
+    left:20%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:5;
+}
+
+/* menu */
+
+.menu{
+    position:absolute;
+    top:40px;
+    right:40px;
+}
+
+.menu span{
+    display:block;
+    width:40px;
+    height:4px;
+    background:black;
+    margin-bottom:8px;
+}
+
+/* dots */
+
+.dots{
+    position:absolute;
+    right:30px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.dots span{
+    display:block;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#d6b100;
+    margin:15px 0;
+}
+
+.dots .active{
+    background:black;
+}
+
+/* mobile */
+
+@media(max-width:768px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+    .left{
+        padding:40px;
+    }
+
+    h1{
+        font-size:70px;
+    }
+
+    .desc{
+        font-size:16px;
+    }
+
+    .pikachu{
+        width:80%;
+    }
+
+    .dots{
+        display:none;
+    }
+}
