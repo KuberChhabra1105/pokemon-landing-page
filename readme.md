@@ -1,3 +1,5 @@
+# pokemon-landing-page
+Responsive Pokemon landing page built using HTML and CSS with Grid, Flexbox, and modern UI design principles.
 # Pokemon Landing Page
 
 A responsive Pokemon-themed landing page built using HTML and CSS. This project recreates a modern landing page design featuring Pikachu with a split-screen layout, custom UI elements, and responsive styling.
@@ -29,8 +31,8 @@ pokemon-landing-page/
 ├── index.html
 ├── style.css
 ├── README.md
-│── pokemon.png
-|── pikachu-transparent.png
+├── pokemon.png
+└── pikachu-transparent.png
 ```
 
 ## Features
